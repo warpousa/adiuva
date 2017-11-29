@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Header from './common/Header';
 
 class App extends React.Component {
@@ -6,7 +7,7 @@ class App extends React.Component {
     return (
       <div className="container-fluid">
         <Header />
-        {this.props.children}
+          {this.props.children}
       </div>
     );
   }
